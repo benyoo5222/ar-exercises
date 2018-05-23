@@ -8,3 +8,9 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+t = Store.sum(:annual_revenue)
+puts t
+
+puts t/ Store.count
+
+puts Store.where("annual_revenue > ?", 1000000).count
